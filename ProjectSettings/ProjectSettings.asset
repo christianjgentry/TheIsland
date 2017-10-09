@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  productGUID: d85355b3755bec343a1558a2cb63d59f
+  productGUID: 1b95e9d47f6edf64b83ce14c28cf0798
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Island_2
+  productName: New Unity Project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -40,8 +40,7 @@ PlayerSettings:
   m_SplashScreenLogos: []
   m_SplashScreenBackgroundLandscape: {fileID: 0}
   m_SplashScreenBackgroundPortrait: {fileID: 0}
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f,
-    type: 3}
+  m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -74,7 +73,7 @@ PlayerSettings:
   Force IOS Speakers When Recording: 0
   submitAnalytics: 1
   usePlayerLog: 1
-  bakeCollisionMeshes: 1
+  bakeCollisionMeshes: 0
   forceSingleInstance: 0
   resizableWindow: 1
   useMacAppStoreValidation: 0
@@ -155,7 +154,7 @@ PlayerSettings:
   ForceSDCardPermission: 0
   CreateWallpaper: 0
   APKExpansionFiles: 0
-  keepLoadedShadersAlive: 1
+  keepLoadedShadersAlive: 0
   StripUnusedMeshComponents: 0
   VertexChannelCompressionMask:
     serializedVersion: 2
@@ -228,90 +227,15 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: Standalone
-    m_Icons:
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 1024
-      m_Height: 1024
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 512
-      m_Height: 512
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 256
-      m_Height: 256
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 128
-      m_Height: 128
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 48
-      m_Height: 48
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 32
-      m_Height: 32
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bbe44557c9f26cb4cb28372d146d2c7f, type: 3}
-      m_Width: 16
-      m_Height: 16
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 1
     m_Devices:
-    - None
+    - Oculus
     - OpenVR
-  - m_BuildTarget: Standalone
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: iOS
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: Android
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: WebGL
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: Tizen
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: PSP2
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: PS4
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: PSM
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: XboxOne
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: SamsungTV
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: N3DS
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: WiiU
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: tvOS
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: Facebook
-    m_Enabled: 0
-    m_Devices: []
-  - m_BuildTarget: 
-    m_Enabled: 0
-    m_Devices: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   webPlayerTemplate: APPLICATION:Default
@@ -449,9 +373,6 @@ PlayerSettings:
   switchUdpSendBufferSize: 9
   switchUdpReceiveBufferSize: 42
   switchSocketBufferEfficiency: 4
-  switchSocketInitializeEnabled: 1
-  switchNetworkInterfaceManagerInitializeEnabled: 1
-  switchPlayerConnectionEnabled: 1
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -581,16 +502,17 @@ PlayerSettings:
   webGLUseWasm: 0
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
-    1: VRTK_DEFINE_SDK_STEAMVR;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_1_OR_NEWER;VRTK_DEFINE_STEAMVR_PLUGIN_1_2_2_OR_NEWER;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
-    4: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
-    7: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    1: CROSS_PLATFORM_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     13: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
-    17: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    14: MOBILE_INPUT
+    17: MOBILE_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     18: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     19: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
-    20: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    20: MOBILE_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     21: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
-    22: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
+    22: MOBILE_INPUT;VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     23: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     24: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
     25: VRTK_VERSION_3_2_1;VRTK_VERSION_3_2_1_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER
@@ -604,14 +526,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Island_2
+  metroPackageName: New Unity Project
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Island_2
+  metroApplicationDescription: New Unity Project
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -683,13 +605,12 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Build: 0
-    Collab: 0
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 7779073a-7cae-4940-9549-bbfe4966e595
-  projectName: Island_2
+  cloudProjectId: b1a4c9f0-2b42-41ae-a0c8-fd278aae33a2
+  projectName: The Island
   organizationId: christianjgentry
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
