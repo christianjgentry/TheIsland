@@ -44478,6 +44478,7 @@ MonoBehaviour:
   _TilingOffset: 284
   _MaskBase: 285
   _MaskLayers: 286
+<<<<<<< HEAD
   instanceID: 41684
 =======
   _TilingOffset: 589
@@ -44485,6 +44486,9 @@ MonoBehaviour:
   _MaskLayers: 591
   instanceID: 55874
 >>>>>>> Zachery
+=======
+  instanceID: 66156
+>>>>>>> Christian
 --- !u!4 &1533792238
 Transform:
   m_ObjectHideFlags: 0
